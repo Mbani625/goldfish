@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+    <link rel="stylesheet" type="text/css" href="GoldfishLayout.css">
+    <title>Goldfish Webpage for MTG</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="navbar-brand" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Decks</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                The Lab
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Deck 1</a>
+              <a class="dropdown-item" href="#">Deck 2</a>
+              <a class="dropdown-item" href="#">Deck 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="#">My Profile</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#">
+          <img src="LetterCapture.PNG" width="30" height="30" class="logo rounded float-right" alt="">
+            Goldfish App
+        </a>
+    </nav>
+    <div class="toolkit-container-fluid">
+      <nav class ="navbar position-relative navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ToolKit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Decklist
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Permanents</a>
+                  <a class="dropdown-item" href="#">Non-Permanents</a>
+                  <a class="dropdown-item" href="#">Lands</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tokens
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">1/1 Snake</a>
+                  <a class="dropdown-item" href="#">5/5 Elemental</a>
+                  <a class="dropdown-item" href="#">4/4 Beast</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Your Decks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Deck 1</a>
+                  <a class="dropdown-item" href="#">Deck 2</a>
+                  <a class="dropdown-item" href="#">Deck 3</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    <div class="gameplay-container">
+      <div class="vertical-menu">
+        <a href="#" class="active">Home</a>
+        <a href="#">+1/+1 Counter</a>
+        <a href="#">Token Counter</a>
+        <a href="#">Dice Roll</a>
+        <a href="#">Go to Deck</a>
+      </div>
+        <div class="creature-row">
+          <div class="commander-container"></div>
+        </div>
+        <div class="artifacts-row"></div>
+        <div class="lands-row"></div>
+        <div class="hand-row"> 
+          <div class="hand-container">
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div>
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div>  
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div> 
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div> 
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div> 
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div> 
+            <div class="draggable zoom">
+              <img src="Mountain_Mana.png" class="hand-card" style="height:130px; width:100px;">
+            </div>
+          </div> 
+        </div>   
+      </div>
+    <!--Bootstrap, Popper and JQuery-->
+    <script src="Homepage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+      <script>
+        $( function() {
+          $( ".draggable" ).draggable({ snap: "creature-row", grid: [ 10, 5 ] });
+          $(".draggable").zoom(); 
+          $(".draggable").onclick('zoom.destroy'); 
+        } );
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    height:200px;
+    width: 100%;
+}
+
+h1 {
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 100%;
+}
+
+button {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.gameplay-container {
+    display: inline-block;
+    margin-top: 0px;
+    height:600px;
+    width: 100%;
+}
+
+.creature-row {
+    margin-top: 5px;
+    margin-left: 5px;
+    height:140px;
+    width: 84%;
+    background-color: rgb(206, 206, 206);
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.commander-container {
+    margin-top: -1px;
+    float:right;
+    height:140px;
+    width: 110px;
+    border:1px solid rgb(0, 119, 255);
+    border-radius: 8px;
+   
+}
+
+.artifacts-row {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: relative;
+    height:140px;
+    width: 84%;
+    background-color: rgb(206, 206, 206);
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.lands-row {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: relative;
+    height:140px;
+    width: 84%;
+    background-color: rgb(206, 206, 206);
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.logo {
+    margin-left:10px;
+    margin-right: 2px;
+}
+
+.hand-row {
+    margin: 5px auto 5px auto;
+    height:200px;
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius:8px;
+}
+
+.hand-container{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    height: 150px;
+    width: 110px;
+    width: 50%;
+    border: 1px solid red;
+}
+
+.zoom{
+    padding:0px;
+    transition: transform .2s;
+    transition-delay: 1s;
+    width: 200px;
+    height:260px;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+    z-index:9999;
+}
+
+.hand-card {
+    margin-left: 5px;
+    height: 130px;
+    width: 100px;
+    position: absolute;
+    background: rgb(61, 61, 61);
+    -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.6);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.6);
+}
+
+.draggable {
+    display:inline-block;
+    margin-top: 7px;
+    height: 130px;
+    width: 100px;
+}
+
+.vertical-menu{
+    float:right;
+    width:200px;
+}
+
+.vertical-menu a {
+    background-color: grey;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration:none;
+}
+
+.vertical-menu a:hover {
+    background-color: darkgrey;
+}
+.vertical-menu a.active {
+    background-color: rgb(69, 255, 52);
+    color:rgb(0, 0, 0);
+}
